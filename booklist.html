@@ -33,45 +33,78 @@
 
 <body>
 
-  <a style="font-size:30px;cursor:pointer;margin-left: 15px;" href="index.html"> &#60; </a>
+  <a style="font-size:30px;cursor:pointer;
+  margin-left: 15px;" href="index.html"> &#60; </a>
 
  <div class="container-fluid"
   style="margin: 0px;
    margin-top: 25px;
-  margin-right: 35px;
-  margin-left: 35px;
+ 
   margin-bottom: 30px;
-  
+  align-content: center;
 
+ 
     ">
-    <h2>top picks</h2>
-      <div class="container-fluid" style="
-      padding: 0px;">
-  
-        <div class="row justify-content-center" style="">
-          <div class="col-xs-4 ">
-            <a  href="http://libgen.rs/book/index.php?md5=C2AB8A80F069260E556F14D0A68C3B80"><img src="https://images-na.ssl-images-amazon.com/images/I/71DA0uV3gqL.jpg" class="img-responsive book"></a>
-          </div>
-          <div class="col-xs-4">
-            <a   href="http://library.lol/main/07780A7C0600C4ADC1C181C329AC779E"><img src="https://images-na.ssl-images-amazon.com/images/I/41GL2iBMH3L._SX302_BO1,204,203,200_.jpg" class="img-responsive book"></a>
-          </div>
-          <div class="col-xs-4">
-            <a  href="http://libgen.rs/book/index.php?md5=0B67E2BC8B81003C9780CA6E58468C0B"><img src="https://m.media-amazon.com/images/I/41DLI3E47nL.jpg" class="img-responsive book"></a>
-          </div>  
+    <h6 style="text-align: center;
+    margin-right: 40px;
+    margin-left: 40px;
+    ">click on any book and it will direct you the library genesis page for it.
+<br/>
+<br/>
+
+    </h2>
+     
+        <!-- Control buttons -->
+        <div id="myBtnContainer" style="
+          margin-right: 40px;
+          margin-left: 40px;">
+          <button class="btn active" onclick="filterSelection('all')"> show all</button>
+          <button class="btn" onclick="filterSelection('gender')"> gender</button>
+          <button class="btn" onclick="filterSelection('race')"> race</button>
+          <button class="btn" onclick="filterSelection('technology')"> technology</button>
+          <button class="btn" onclick="filterSelection('politics')"> politics</button>
+          <button class="btn" onclick="filterSelection('politics')"> environment</button>
         </div>
 
+        <br/>
 
-        <div class="row">
-          <div class="col-xs-4 ">
-            <a  href="http://libgen.rs/book/index.php?md5=52B012F41E6568408360BECB3F7F77C4"><img src="http://libgen.rs/covers/2374000/52b012f41e6568408360becb3f7f77c4-d.jpg" class="img-responsive book"></a>
-          </div>
-          <div class="col-xs-4 ">
-            <a   href=""><img src="http://libgen.rs/covers/2573000/b3d465f56fed006297649b12658b5211-g.jpg" class="img-responsive book"></a>
-          </div>
-          <div class="col-xs-4">
-            <a  href="http://libgen.rs/book/index.php?md5=B63C5A5D841B70DDE99E2D10CA3DE0CC"><img src="https://go.mitpress.mit.edu/hubfs/Imported%20sitepage%20images/%3Fcollid=books_covers_0%26isbn=9780262539739%26type=-1.jpg" class="img-responsive book"></a>
-          </div>  
-        </div>
+<div class="container" style="
+padding-right: 35px;
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+text-align:center;
+">
+  <!-- glitch feminism, russell-->
+  <div class="filterDiv gender race technology"><a href="http://libgen.rs/book/index.php?md5=C2AB8A80F069260E556F14D0A68C3B80"><img style="width: 100px;"src="https://images-na.ssl-images-amazon.com/images/I/71DA0uV3gqL.jpg"></a></div>
+  <!-- black utopia, alex zamalin-->
+  <div class="filterDiv politics race technology"><a href="http://library.lol/main/07780A7C0600C4ADC1C181C329AC779E"><img style="width: 100px;"src="https://images-na.ssl-images-amazon.com/images/I/41GL2iBMH3L._SX302_BO1,204,203,200_.jpg"></a></div>
+  <!-- becoming human, zakiyyah iman jackson-->
+  <div class="filterDiv politics race"><a href="http://libgen.rs/book/index.php?md5=0B67E2BC8B81003C9780CA6E58468C0B"><img style="width: 100px;"src="https://m.media-amazon.com/images/I/41DLI3E47nL.jpg"></a></div>
+  <!-- techno feminism, judy wajcman-->
+  <div class="filterDiv gender politics technology"><a href="http://libgen.rs/book/index.php?md5=52B012F41E6568408360BECB3F7F77C4"><img style="width: 100px;"src="http://libgen.rs/covers/2374000/52b012f41e6568408360becb3f7f77c4-d.jpg"></a></div>
+  <!-- race after technology, ruha benjamin-->
+  <div class="filterDiv race technology politics"><a href="http://libgen.rs/book/index.php?md5=9383965BB44F1EEAA77666F30B89D447"><img style="width: 100px;"src="http://libgen.rs/covers/2573000/b3d465f56fed006297649b12658b5211-g.jpg"></a></div>
+  <!-- your computer is on fire-->
+  <div class="filterDiv technology race gender politics"><a href="http://libgen.rs/book/index.php?md5=B63C5A5D841B70DDE99E2D10CA3DE0CC"><img style="width: 100px;"src="https://go.mitpress.mit.edu/hubfs/Imported%20sitepage%20images/%3Fcollid=books_covers_0%26isbn=9780262539739%26type=-1.jpg"></a></div>
+
+  <!-- i write what i like, steve biko-->
+  <div class="filterDiv politics race"><a href="http://libgen.rs/book/index.php?md5=921BB0F0EB000DF02B886C8AC5FB3ECA"><img style="width: 100px;"src="http://libgen.rs/covers/758000/921bb0f0eb000df02b886c8ac5fb3eca-d.jpg"></a></div>
+
+<!-- ecological feminism, christine cuomo-->
+  <div class="filterDiv environment gender politics">
+    <a   href="http://libgen.rs/book/index.php?md5=0958C50B4B27FEB97F733035203F0A1E"><img src="http://libgen.rs/covers/390000/0958c50b4b27feb97f733035203f0a1e-d.jpg" class="img-responsive book"></a>
+  </div>
+
+
+
+
+
+
+</div>
+
+
 
 
       </div>
@@ -88,10 +121,66 @@
 
 
 
+
+
+
 </html>
 
 
+<script type="text/javascript">
+  
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
 
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+
+
+
+</script>
 
 
 
