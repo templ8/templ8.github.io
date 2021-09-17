@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>designboyxyz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+  <link rel="icon" type="image/png" href="pin.png"/>
+
+<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="css3-animate-it.js">
+</script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
+</head>
+ 
+<body style="
+
+margin-top: 40%;
+">
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="modalImg" 
+  style="width: 80%;
+  ">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer;margin-left: 15px;" onclick="openNav()"> &#9776; </span>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times; </a>
+  <a href="essays.html" style="margin-left: 15px;">essays</a>
+  
+</div>
+
+<!-- main container -->
+<div class="container-fluid"
+style="
+height: 90vh;
+margin-top: 25px;
+margin-right: 35px;
+margin-left: 35px;
+margin-bottom: 30px;
+
+
+">
+
+
+  <div class="container-fluid"
+    style="margin: 0px;
+    height: 100%;
+    padding: 0px;
+    ">
+    <div class="row">
+
+
+      <!-- left panel -->
+      <div id="panel" class="col-xs-12 col-sm-4 col-lg-3 col-xl-3"
+              
+             >
+
+              <!-- avi -->
+              <div class="avi" style="
+
+              "> 
+                <img src="avi.png"  class="avi_img" style="
+                display: block;
+                margin-left: auto;
+                margin-right: auto;">
+              </div>
+
+
+
+
+              <!-- bio -->
+              <div class="bio" style="
+              text-align: center;
+             "> 
+                <div style="font-size: 28px; padding-top: 10px;">designboyXYZ</div>
+                <div style="
+                padding-left: 10px;
+                padding-right: 10px;
+                "><br/>designboyXYZ is a pakistani-american  multi-media artist based in the san francisco bay area. </div>
+              </div>
+
+               <!-- social icons -->
+
+              <div class="buttondiv" style="
+              padding: 0px;
+              
+              "> 
+                <div class="container-fluid socialbuttons"
+                style="margin-bottom: 0px;
+                padding-top: 0px;
+                align-content: center;
+                
+                ">
+                  <div class="row" style="">
+                    <div class="col-xs-4" style="
+                    min-height: 40px;">
+                      <a href="http://twitter.com/designboyxyz">
+                        <img src="twitter.png"  width="30px" height="30px" style="
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;">
+                      </a>
+                    </div>
+                    <div class="col-xs-4" style="
+                    min-height: 40px;">
+                      <a href="http://instagram.com/designboyxyz">
+                         <img src="ig.png"  width="30px" height="30px" style="
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;">
+                      </a>
+                    </div>
+                    <div class="col-xs-4" style="
+                    min-height: 40px;">
+                      <a href="mailto: designboyxyz@gmail.com">
+                        <img src="mailicon.png"  width="30px" height="30px" style="
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;">
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+        
+      </div>
+
+      <!-- image grid container for big screens-->
+      <div class="col-xs-12 col-sm-8 col-lg-8 screendisplay" 
+        style="background-color: white;
+        
+               height: 100%;
+
+            
+              ">
+
+              <!-- image grid -->
+              <div class="container-fluid" style="margin-left: auto;
+              margin-right: auto;
+                  ">
+                <div class="row" style="
+                  width: inherit;
+                ">
+                  <div class="col-xs-3 imageholder">
+                    <div class="square" id="img1"
+                      style="background-image: url('img1.png');">
+                    </div>
+
+                   
+
+                  </div>
+
+                  <div class="col-xs-3 imageholder">
+                    <div class="square" id="img2"
+                        style="background-image: url('img2.png')">
+                    </div>
+                  </div>
+
+                  <div class="col-xs-3 imageholder">
+                    <div class="square" id="img3"
+                        style="background-image: url('img3.png')">
+                    </div>
+                  </div>
+
+                   <div class="col-xs-3 imageholder">
+                    <div class="square" id="img4"
+                        style="background-image: url('img4.png')">
+                    </div>
+                  </div>
+              </div>
+
+              <!-- row 2 -->
+              <div class="row" style="
+                  align-content: center;">
+                  <div class="col-xs-3 imageholder">
+                    <div class="square" id="img5"
+                      style="background-image: url('img5.png');">
+                    </div>
+                  </div>
+
+                  <div class="col-xs-3 imageholder">
+                    <div class="square" id="img6"
+                        style="background-image: url('img6.png')">
+                    </div>
+                  </div>
+
+                  <div class="col-xs-3 imageholder">
+                    <div class="square" id="img7"
+                        style="background-image: url('img7.png')">
+                    </div>
+                  </div>
+
+                   <div class="col-xs-3 imageholder">
+                    <div class="square" id="img8"
+                        style="background-image: url('img8.png')">
+                    </div>
+                  </div>
+              </div>
+
+
+              <!-- row 3 -->
+              <div class="row" style=" 
+                  align-content: center;">
+                  <div class="col-xs-3 imageholder">
+                    <div class="square" id="img9"
+                      style="background-image: url('img9.png');">
+                    </div>
+                  </div>
+
+                  <div class="col-xs-3 imageholder">
+                    <div class="square" id="img10"
+                        style="background-image: url('img10.png')">
+                    </div>
+                  </div>
+
+                  <div class="col-xs-3 imageholder">
+                    <div class="square" id="img11"
+                        style="background-image: url('img11.png')">
+                    </div>
+                  </div>
+
+                   <div class="col-xs-3 imageholder">
+                    <div class="square" id="img12"
+                        style="background-image: url('img12.png')">
+                    </div>
+                  </div>
+              </div>
+
+
+
+      </div>  
+
+
+
+                    
+
+
+
+
+
+
+      </div>
+
+  
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+<script type="text/javascript">
+  
+
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var modalImg = document.getElementById("modalImg");
+
+var img1 = document.getElementById("img1");
+var img4 = document.getElementById("img4");
+
+img1.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img1_full.jpg";}
+img2.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img2_full.jpg";}
+img3.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img3_full.png";}
+img4.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img4_full.jpg";}
+img5.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img5_full.jpg";}
+img6.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img6_full.jpg";}
+img7.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img7_full.jpg";}
+img8.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img8_full.jpg";}
+img9.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img9_full.jpg";}
+img10.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img10_full.jpg";}
+img11.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img11_full.jpg";}
+img12.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "img12_full.jpg";}
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+</html>
