@@ -4,6 +4,8 @@ html, body {
 
 }
 
+.container{overflow: hidden;}
+
 html {
     display: table;
     margin: auto;
@@ -452,4 +454,50 @@ p::first-letter{
 	padding: 15px 0 0 0;
 	margin: auto;
 }
+
+
+.container{overflow: hidden;}
+
+.filterDiv {
+  color: #ffffff;
+height: 170px;
+  line-height: 100px;
+  margin: 5px ;
+  display: none; /* Hidden by default */
+}
+
+
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display:inline-block;
+}
+
+/* Style the buttons */
+.btn {
+  padding: 5px 16px;
+border: 20px; 
+border-color: red; margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 45px;
+  color: black;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #fff;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #8899a6;
+
+  color: white;
+}
+
+
+
 
