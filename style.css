@@ -1,0 +1,455 @@
+html, body {
+    height: 100%;
+
+
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    
+    width: 100%;
+    color: white;
+
+
+}
+
+
+	.square {
+	    padding-bottom: 100%;
+	    background-size: cover;
+	    background-position: center;
+	    cursor: pointer;
+  transition: 0.3s;
+
+	}
+
+	.square:hover
+    {
+     opacity: 0.3;
+      filter: alpha(opacity=30);
+    }
+
+.essaybox{
+	  cursor: pointer;
+  transition: 0.3s;
+}
+
+.essaybox:hover{
+	 opacity: 0.3;
+      filter: alpha(opacity=30);
+    }
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.85); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  margin-top: 0%;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+	.imageholder {
+		padding-left: 0px; padding-right: 0px;
+	}
+
+
+@media screen and (max-width: 2560px) {
+	body {
+    background-color: #192734;
+    width: 1560px;
+	}
+
+	.essaytitle{font-size: 28px;}
+
+
+	.avi {
+	min-height: 100px;
+	}
+
+.avi_img{
+		width: 120px;
+		height: 120px;	}
+
+.essaytitle{ padding-left: 75px;}
+
+.essaykeywords{
+	padding-left: 75px;
+}
+
+	.bio {min-height:  175px;
+		margin-top: 30%;}
+
+	.screendisplay{margin-top: 5%;
+		padding: 0px;
+		;}
+
+	.socialbuttons{
+		padding-left: 20%;
+        padding-right: 20%;
+    }
+
+}
+
+@media screen and (max-width: 1480px) {
+body {
+	width: 1080px;
+    padding-top: 20px;
+	}
+
+#panel { margin-right: 5%; }
+
+	.avi {
+	min-height: 100px;
+	}
+
+	.bio{margin-top: 30%;}
+
+	.essaydesc{margin-left: 75px;}
+
+	.socialbuttons {padding-top: 10%;
+		margin-right: 0%; 
+		margin-left: 00%;}
+
+	.screendisplay{
+		
+		padding: 0px;
+		max-width: 800px;
+		}
+
+	.avi_img{
+		width: 90px;
+		height: 90px;	}
+
+
+}
+
+@media screen and (max-width: 1366px) {
+
+body {
+
+	}
+
+.essaytext{margin-left: 20%;
+    margin-right: 20%;}
+
+
+	.avi {
+	min-height: 100px;
+	margin-top: 25%;
+	}
+
+	.avi_img{
+		width: 75px;
+		height: 75px;
+	}
+
+	.bio{margin-top: 20%;}
+
+
+	.screendisplay{margin-top: 3.5%;
+	padding: 0px;
+	}
+
+}
+
+
+@media screen and (max-width: 1024px) {
+	#panel { margin-right: 0%; }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+	body {
+		padding-top: 0px;
+	    background-color:  #192734;}
+
+
+	.avi {
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 50%;
+	margin-top: 40%;}
+
+	.avi_img{
+		width: 75px;
+		height: 75px;}
+
+	.bio {
+		min-height:  175px;
+	margin-top: 20%;}
+
+	.screendisplay{
+		margin-top: 10%;
+		padding: 0px;}
+
+	.socialbuttons{
+		margin-top: 7.5%;
+		padding-left: 10%;
+        padding-right: 10%;}
+
+}
+
+@media screen and (max-width:  755px){
+	.avi { margin-top: 10%; }
+
+	.bio{margin-right: 20%;
+		margin-left: 20%;
+		min-height: 200px;
+		margin-top: 0%;
+	}
+
+		.socialbuttons{
+		
+		padding-left: 25%;
+        padding-right: 25%;}
+
+.buttondiv{margin-top: -75px;
+              margin-bottom: -30px;}
+
+              .screendisplay{ margin-bottom: 20px;}
+
+}
+
+@media screen and (max-width:  1200px){
+
+#panel { margin-right: 0%; }
+
+}
+
+@media screen and (max-width: 600px) {
+body{
+}
+
+.bio{margin-right: 20%;
+		margin-left: 20%;
+		min-height: 250px;
+		margin-top: 0%;}
+
+
+.buttondiv{margin-top: -75px;
+              margin-bottom: -30px;}
+	.socialbuttons{
+
+		padding-top: 0px;}
+
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+	body {
+		background-color:  #192734;
+	}
+
+.bio{margin-right: 10%;
+		margin-left: 10%;
+		margin-top: 0%;}
+
+.essaytext{
+	margin-left: 0%;
+	margin-right: 0%;
+}
+
+.essaytitle{
+	font-size: 18px;
+	padding-left: 35px;
+}
+
+.essaydesc{
+	margin-left: 35px;
+}
+
+.essaykeywords{
+	padding-left: 35px;
+}
+
+	.avi {
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 50%;
+	margin-top: 10%;
+	}
+
+	.avi_img{
+		width: 75px;
+		height: 75px;
+	}
+
+	.bio {height:  30%;}
+
+	.screendisplay{ margin-bottom: 12.5px;}
+
+
+
+	
+
+
+	.screendisplay{
+		padding: 0px;
+
+
+	}
+
+	.buttondiv{margin-bottom: 1px;}
+
+	.socialbuttons{
+		padding-left: 10%;
+        padding-right: 10%;}
+
+
+}
+
+@media screen and (max-width: 325px) {
+.avi {
+	
+	margin-top: 5%;
+
+	}
+
+	.bio{margin-bottom: 25px;}
+
+
+}
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+background-color: #15202b;
+
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+p::first-letter{
+	font-size: 400%;
+	line-height: 80%;
+}
+
+
+
+
+
+.book {
+	padding: 15px 0 0 0;
+	margin: auto;
+}
+
