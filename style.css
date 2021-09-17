@@ -477,8 +477,8 @@ height: 170px;
 /* Style the buttons */
 .btn {
   padding: 5px 16px;
-border: 20px; 
-border-color: red; margin-right: 10px;
+	/*border-color: red; */
+	margin-right: 10px;
   margin-bottom: 10px;
   border-radius: 45px;
   color: black;
